@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Plush Miracle</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Plush Miracle</div>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">Про нас</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>“М’яке щастя у ваших руках!”</h2>
+      <p>Кожна іграшка — це маленький світ затишку та тепла,<br>створений з любов’ю та турботою. Ми виготовляємо<br>ексклюзивні м’які іграшки власного дизайну,<br>використовуючи якісні, безпечні матеріали.</p>
+    </div>
+    <div class="hero-image">
+      <img src="igm/bear.jpg" alt="Плюшевий ведмедик">
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2 class="categories-title">Категорії</h2>
+    <div class="category">
+      <h2 class="visually-hidden" aria-hidden="true"></h2>
+      <img src="igm/chiken.jpg" alt="Іграшки ручної роботи">
+      <div class="label">Іграшки ручної роботи</div>
+    </div>
+    <div class="category">
+      <img src="igm/lama.jpg" alt="Звичайні іграшки">
+      <div class="label">Звичайні іграшки</div>
+    </div>
+    <div class="category">
+      <img src="igm/komp.jpg" alt="Свій дизайн іграшки">
+      <div class="label">Свій дизайн іграшки</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>Про нас</h2>
+      <p>Ласкаво просимо у світ ніжності та затишку!<br><br>
+      Ми — команда творчих майстрів, які з любов’ю<br>створюють унікальні плюшеві іграшки ручної роботи.<br>
+      Кожен наш ведмедик, зайчик чи котик — це не просто<br>
+      іграшка, а маленька історія, сповнена тепла, радості<br>
+      та турботи.</p>
+    </div>
+    <div class="about-image">
+      <img src="igm/team.jpg" alt="Команда творців">
+    </div>
+  </section>
+
+  <section class="work-for-you">
+    <h2>Працюємо для вас</h2>
+    <ul>
+      <li>✓ Натхнення з кожним швом</li>
+      <li>✓ Подарункове пакування</li>
+      <li>✓ Якість і безпека матеріалів</li>
+    </ul>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <h2>Асортимент іграшок</h2>
+    <div class="catalog-container">
+        <div class="catalog-item">
+            <img src="igm/krol.jpg" alt="Плюшевий кролик">
+            <p>Плюшевий кролик</p>
+            <p>200 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/misha.jpg" alt="Плюшевий ведмедик">
+            <p>Плюшевий ведмедик</p>
+            <p>230 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/slon.jpg" alt="Плюшевий слон">
+            <p>Плюшевий слон</p>
+            <p>400 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/dino.jpg" alt="Плюшева лама">
+            <p>Плюшева лама</p>
+            <p>300 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/avokado.jpg" alt="Плюшеве авокадо">
+            <p>Плюшеве авокадо</p>
+            <p>260 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/dino.jpg" alt="Плюшевий динозавр">
+            <p>Плюшевий динозавр</p>
+            <p>500 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/owl.jpg" alt="Плюшева сова">
+            <p>Плюшева сова</p>
+            <p>350 грн</p>
+        </div>
+        <div class="catalog-item">
+            <img src="igm/cat.jpg" alt="Плюшевий котик">
+            <p>Плюшевий котик</p>
+            <p>300 грн</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>Відгуки клієнтів</h2>
+    <div class="review">
+      <p><strong>Олена:</strong> Неймовірно ніжний ведмедик, дитина в захваті!</p>
+    </div>
+    <div class="review">
+      <p><strong>Марина:</strong> Замовляла зайчика на подарунок, якість ідеальна!</p>
+    </div>
+  </section>
+
+  <section class="reviews" id="review-form">
+    <h2>Залишити відгук</h2>
+    <form onsubmit="sendReview(event)">
+      <textarea placeholder="Ваш відгук..."></textarea><br>
+      <button type="submit">Відправити</button>
+    </form>
+  </section>
+
+  <footer id="contacts">
+    <div style="text-align: center; padding: 20px; background: #f5a6aa; color: #000">
+      <p>© 2025 Plush Miracle. Усі права захищено.</p>
+      <p>Контакти: plush@example.com | +38 (097) 000 00 00</p>
+    </div>
+  </footer>
+  <script>
+    function sendReview(e) {
+      e.preventDefault();
+      alert("Відгук надіслано");
+    }
+  </script>
+</body>
+</html>
